@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard - something</title>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/circle.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <div class="close"></div>
+        <div class="profile-info">
+            <a href="account.html">
+                <img class="profile-info-pic" src="images/profile.png" alt="">
+            </a>
+            <a href="account.html">
+                <h3 class="profile-info-name">Jason Bourne</h3>
+            </a>
+            <p class="profile-info-description">Reiziger</p>
+        </div>
+        <nav class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a class="active" href="account.html">Account</a>
+                <a href="intell.html">Instellingen</a>
+        </nav>
+        <div class="log-out">
+            <a  class="log-out-link" href="logout.html">Log out</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="top-nav">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+<!--        <h3 class="title">Profile</h3>-->
+        <div class="">
+            <div class="profile-info">
+                <img class="profile-info-pic" src="images/profile.png" alt="">
+                <h3 class="profile-info-name">Jason Bourne</h3>
+                <p class="profile-info-description">Reiziger</p>
+                <p style="text-align: left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
+                    cupiditate dolorem eligendi, eveniet ipsum itaque, neque, quidem ratione reprehenderit repudiandae
+                    vero voluptatum! Deleniti ipsum magnam quibusdam ratione recusandae, tempora veniam.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque corporis doloribus est ex
+                    id impedit magni minus, natus nesciunt odit praesentium, quibusdam ratione tempora tempore! Impedit
+                    nesciunt veritatis voluptatem.
+                </p>
+                <div style="padding-top: 50px">
+                    <a href="">Stuur een bericht</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.hamburger').click(function () {
+            $('.sidebar').animate({left : '0'});
+        });
+
+        $('.close').click(function () {
+            $('.sidebar').animate({left : "-1000px"})
+        });
+    });
+</script>
+
+</body>
+</html>

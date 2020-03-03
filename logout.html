@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard - Challange 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/circle.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+        <h1>Je bent uitgelogd!</h1>
+        <a href="index.html">Ga terug</a>
+    </div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.hamburger').click(function () {
+            $('.sidebar').animate({left : '0'});
+        });
+
+        $('.close').click(function () {
+            $('.sidebar').animate({left : "-1000px"})
+        });
+    });
+</script>
+
+</body>
+</html>

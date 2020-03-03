@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard - Challange 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/circle.css">
+
+    <style>
+        /*.sidebar{*/
+        /*    display: flex;*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+<div class="container">
+<!--    <div class="sidebar"></div>-->
+<!--    <div class="content"></div>-->
+
+
+    <div class="sidebar">
+        <div class="close"></div>
+        <div class="profile-info">
+            <a href="account.html">
+                <img class="profile-info-pic" src="images/profile.png" alt="">
+            </a>
+            <a href="account.html">
+                <h3 class="profile-info-name">Jason Bourne</h3>
+            </a>
+            <p class="profile-info-description">Reiziger</p>
+        </div>
+        <nav class="nav-links">
+                <a class="active" href="index.html">Dashboard</a>
+                <a href="account.html">Account</a>
+                <a href="intell.html">Instellingen</a>
+        </nav>
+        <div class="log-out">
+            <a  class="log-out-link" href="logout.html">Log out</a>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="top-nav">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <h1 class="title">Dashboard</h1>
+        <div class="">
+            <div class="div1">
+                <h2>Brandstof</h2>
+                <div class="circle">
+                    <div class="c100 p50 center orange">
+                        <span>50%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2">
+                <h2>Energie</h2>
+                <div class="energie">
+                    <!-- width-100 width-80 width-60 ... -->
+                    <div class="horizontal-bar width-100">Elektriciteit</div>
+                    <div class="horizontal-bar width-60">Water</div>
+                    <div class="horizontal-bar width-40">Gas</div>
+                </div>
+            </div>
+            <div class="div3">
+                <h2>Gemaakte kilometers</h2>
+                <div style="position:relative;left: -25px">
+                    <div class="bar-info">
+                        <p>200</p>
+                        <p>0</p>
+                    </div>
+                    <!-- height-10 height-20 .... -->
+                    <div class="outer-bar">
+                        <div class="inner-bar height-60"> </div>
+                        <div class="bar-info-num">1</div>
+                    </div>
+                    <div class="outer-bar">
+                        <div class="inner-bar height-40"> </div>
+                        <div class="bar-info-num">2</div>
+                    </div>
+                    <div class="outer-bar">
+                        <div class="inner-bar height-40"></div>
+                        <div class="bar-info-num">3</div>
+                    </div>
+                    <div class="outer-bar">
+                        <div class="inner-bar height-80"></div>
+                        <div class="bar-info-num">4</div>
+                    </div>
+                    <div class="outer-bar">
+                        <div class="inner-bar height-20"></div>
+                        <div class="bar-info-num">5</div>
+                    </div>
+                    <div class="outer-bar">
+                        <div class="inner-bar height-10"></div>
+                        <div class="bar-info-num">6</div>
+                    </div>
+                    <div class="outer-bar">
+                        <div class="inner-bar height-20"></div>
+                        <div class="bar-info-num">7</div>
+                    </div>
+                    <div class="outer-bar">
+                        <div class="inner-bar height-10"></div>
+                        <div class="bar-info-num">8</div>
+                    </div>
+                    <div class="outer-bar">
+                        <div class="inner-bar height-40"></div>
+                        <div class="bar-info-num">9</div>
+                    </div>
+                    <div class="outer-bar">
+                        <div class="inner-bar height-80"></div>
+                        <div class="bar-info-num">10</div>
+                    </div>
+                    <div class="outer-bar">
+                        <div class="inner-bar height-100"></div>
+                        <div class="bar-info-num">11</div>
+                    </div>
+                </div>
+                <div style="margin: 25px">
+                    UREN
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.hamburger').click(function () {
+            $('.sidebar').animate({left : '0'});
+        });
+
+        $('.close').click(function () {
+            $('.sidebar').animate({left : "-1000px"})
+        });
+    });
+</script>
+
+</body>
+</html>
